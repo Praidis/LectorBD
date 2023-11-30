@@ -28,4 +28,24 @@ public class Puntos {
         }
         return puntos;
     }
+    
+    public String toString() {
+        ArrayList<Integer> puntos = readPuntos();
+        StringBuilder builder = new StringBuilder();
+        for (int i = 0; i < puntos.size(); i += 2) {
+            builder.append("Punto de Acierto: ").append(puntos.get(i)).append(" | Punto de Ronda: ").append(puntos.get(i + 1)).append("\n");
+        }
+        return builder.toString();
+    }
+    
+    public int getPuntoAcierto(int i) {
+        ArrayList<Integer> puntos = readPuntos();
+        return puntos.get(i);
+    }
+
+    public int getPuntoRonda(int i) {
+        ArrayList<Integer> puntos = readPuntos();
+        return puntos.get(i + 1);
+    }
+
 }

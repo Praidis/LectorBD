@@ -2,14 +2,10 @@ package BDLector.BD;
 
 public class Apostador {
 	 private String idapostador;
-	    //private String idapuesta;
-	   // private String idresultado;
-	    private int aciertos;
+     private int aciertos;
 
 	    public Apostador(String idapostador, int aciertos) {
 	        this.idapostador = idapostador;
-	       // this.idapuesta = idapuesta;
-	       // this.idresultado = idresultado;
 	        this.aciertos = aciertos;
 	    }
 	    
@@ -17,9 +13,13 @@ public class Apostador {
 	        return idapostador;
 	    }
 
-	    public int getAciertos() {
+	    public int getAciertos(int ronda) {
 	        return aciertos;
 	    }
+	    public int getAciertoss() {
+	        return aciertos;
+	    }
+	    
 	    public void setAciertos(int aciertos) {
 	        this.aciertos = aciertos;
 	    }
